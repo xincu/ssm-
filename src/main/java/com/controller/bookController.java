@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class bookController {
 @Autowired
     bookServiceImpl bookService=new bookServiceImpl();
-    @RequestMapping("addbook")
-    public  String addbook(){
+    @RequestMapping("findone")
+    public  String findone(String bid){
         System.out.println("展现层");
-        bookService.addbook();
+        bookService.addbook(bid);
         return "add";
     }
 }
