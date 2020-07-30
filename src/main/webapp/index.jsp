@@ -14,8 +14,7 @@
 <h2>
     index 页面
 </h2>
-<form method="post" action="/findone">
-    <input type="text" name="bid">
+<form method="post" action="selectByPrimaryKey">
     <input type="submit" value="新增提交">
 </form>
 </body>
